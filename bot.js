@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 
 
-client.login("MzM3Mzk4ODQzNDU4OTc3Nzky.DuXL-w.Ols9w_YdMPK-mYXj0hrzrBSMFNw");
+client.login("NDYzMDkzNTU3OTI2OTUyOTgw.DuawDA.lq7fFc-DMA5z5UdS1lqmL4mTPEE");
 
 
 
@@ -24,28 +24,28 @@ client.user.setStatus("dnd");
 
 
 
-const devs = ["337398843458977792"];
-const adminprefix = ["mi"];
+const devs = ["463093557926952980"];
+const adminprefix = ["S"];
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
       
-  if (message.content.startsWith('miply')) {
+  if (message.content.startsWith('Sply')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
      if (message.content === ("leave")) {
     message.guild.leave();        
   } else  
-  if (message.content.startsWith('miwt')) {
+  if (message.content.startsWith('Swt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith('mils')) {
+  if (message.content.startsWith('Sls')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith('mist')) {
+  if (message.content.startsWith('Sst')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
       message.channel.send(`**✅**`)
   }
